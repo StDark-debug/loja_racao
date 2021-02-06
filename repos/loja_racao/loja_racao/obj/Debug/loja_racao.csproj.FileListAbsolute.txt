@@ -1,0 +1,14 @@
+C:\Users\endot\source\repos\loja_racao\loja_racao\bin\Debug\loja_racao.exe.config
+C:\Users\endot\source\repos\loja_racao\loja_racao\bin\Debug\loja_racao.exe
+C:\Users\endot\source\repos\loja_racao\loja_racao\bin\Debug\loja_racao.pdb
+C:\Users\endot\source\repos\loja_racao\loja_racao\obj\Debug\loja_racao.csprojAssemblyReference.cache
+C:\Users\endot\source\repos\loja_racao\loja_racao\obj\Debug\loja_racao.Properties.Resources.resources
+C:\Users\endot\source\repos\loja_racao\loja_racao\obj\Debug\loja_racao.csproj.GenerateResource.cache
+C:\Users\endot\source\repos\loja_racao\loja_racao\obj\Debug\loja_racao.csproj.CoreCompileInputs.cache
+C:\Users\endot\source\repos\loja_racao\loja_racao\obj\Debug\loja_racao.exe
+C:\Users\endot\source\repos\loja_racao\loja_racao\obj\Debug\loja_racao.pdb
+C:\Users\endot\source\repos\loja_racao\loja_racao\obj\Debug\loja_racao.Form4.resources
+C:\Users\endot\source\repos\loja_racao\loja_racao\obj\Debug\loja_racao.Login.resources
+C:\Users\endot\source\repos\loja_racao\loja_racao\obj\Debug\loja_racao.Inicio.resources
+C:\Users\endot\source\repos\loja_racao\loja_racao\obj\Debug\loja_racao.Tela_Cadastro.resources
+C:\Users\endot\source\repos\loja_racao\loja_racao\obj\Debug\loja_racao.Tela_novo_usuario.resources
