@@ -11,10 +11,10 @@ using System.Threading;
 
 namespace loja_racao
 {
-    public partial class Form4 : Form
+    public partial class Tela_Outra_Entrega : Form
     {
         Thread nt;
-        public Form4()
+        public Tela_Outra_Entrega()
         {
             InitializeComponent();
         }
@@ -39,7 +39,7 @@ namespace loja_racao
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form f = new Inicio();
+            Form f = new Tela_Inicio();
             f.Closed += (s, args) => this.Close();
             f.Show();
         }

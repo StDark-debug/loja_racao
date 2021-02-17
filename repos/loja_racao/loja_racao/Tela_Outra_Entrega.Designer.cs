@@ -1,7 +1,7 @@
 ﻿
 namespace loja_racao
 {
-    partial class Form4
+    partial class Tela_Outra_Entrega
     {
         /// <summary>
         /// Required designer variable.

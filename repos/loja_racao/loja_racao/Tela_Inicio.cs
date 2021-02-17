@@ -12,11 +12,11 @@ using System.Threading;
 namespace loja_racao
 {
     
-    public partial class Inicio : Form
+    public partial class Tela_Inicio : Form
     {
 
 
-        public Inicio()
+        public Tela_Inicio()
         {
             InitializeComponent();
         }
@@ -45,6 +45,19 @@ namespace loja_racao
             Form f = new Tela_novo_usuario();
             f.Closed += (s, args) => this.Close();
             f.Show();
+        }
+
+        private void btn_list_entrega_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form f = new Tela_Consulta_Entregas();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
     }

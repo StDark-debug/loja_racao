@@ -1,7 +1,7 @@
 ﻿
 namespace loja_racao
 {
-    partial class Inicio
+    partial class Tela_Inicio
     {
         /// <summary>
         /// Required designer variable.
@@ -34,6 +34,7 @@ namespace loja_racao
             this.btn_list_entrega = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.btn_cad_user = new System.Windows.Forms.Button();
+            this.txt_btn_config = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -65,6 +66,7 @@ namespace loja_racao
             this.btn_list_entrega.TabIndex = 2;
             this.btn_list_entrega.Text = "Listar Entregas";
             this.btn_list_entrega.UseVisualStyleBackColor = true;
+            this.btn_list_entrega.Click += new System.EventHandler(this.btn_list_entrega_Click);
             // 
             // button4
             // 
@@ -86,17 +88,29 @@ namespace loja_racao
             this.btn_cad_user.UseVisualStyleBackColor = true;
             this.btn_cad_user.Click += new System.EventHandler(this.btn_cad_user_Click);
             // 
-            // Inicio
+            // txt_btn_config
+            // 
+            this.txt_btn_config.Location = new System.Drawing.Point(396, 277);
+            this.txt_btn_config.Name = "txt_btn_config";
+            this.txt_btn_config.Size = new System.Drawing.Size(89, 23);
+            this.txt_btn_config.TabIndex = 6;
+            this.txt_btn_config.Text = "Configurações";
+            this.txt_btn_config.UseVisualStyleBackColor = true;
+            this.txt_btn_config.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // Tela_Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(497, 312);
+            this.Controls.Add(this.txt_btn_config);
             this.Controls.Add(this.btn_cad_user);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.btn_list_entrega);
             this.Controls.Add(this.btn_cad_entrega);
             this.Controls.Add(this.label1);
-            this.Name = "Inicio";
+            this.Name = "Tela_Inicio";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sistema de Entregas";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -110,5 +124,6 @@ namespace loja_racao
         private System.Windows.Forms.Button btn_list_entrega;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button btn_cad_user;
+        private System.Windows.Forms.Button txt_btn_config;
     }
 }

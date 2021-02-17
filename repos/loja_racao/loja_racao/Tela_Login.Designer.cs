@@ -1,7 +1,7 @@
 ﻿
 namespace loja_racao
 {
-    partial class Login
+    partial class Tela_Login
     {
         /// <summary>
         /// Variável de designer necessária.

@@ -11,11 +11,11 @@ using System.Threading;
 
 namespace loja_racao
 {
-    public partial class Login : Form
+    public partial class Tela_Login : Form
     {
         Thread nt;
 
-        public Login()
+        public Tela_Login()
         {
             InitializeComponent();
         }
@@ -55,7 +55,7 @@ namespace loja_racao
             {
                 MessageBox.Show("Logado com sucesso", "Entrando", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Hide();
-                Form f = new Inicio();
+                Form f = new Tela_Inicio();
                 f.Closed += (s, args) => this.Close();
                 f.Show();
             }
@@ -72,7 +72,7 @@ namespace loja_racao
 
         private void novoForm()
         {
-            Application.Run(new Inicio());
+            Application.Run(new Tela_Inicio());
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

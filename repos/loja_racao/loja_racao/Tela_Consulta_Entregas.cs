@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace loja_racao
 {
-    public partial class Tela_novo_usuario : Form
+    public partial class Tela_Consulta_Entregas : Form
     {
-        public Tela_novo_usuario()
+        public Tela_Consulta_Entregas()
         {
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Cadastro_usuario cad2 = new Cadastro_usuario(textBox2.Text, textBox1.Text);
-        }
-
-        private void Tela_novo_usuario_Load(object sender, EventArgs e)
+        private void Tela_Consulta_Entregas_Load(object sender, EventArgs e)
         {
 
         }

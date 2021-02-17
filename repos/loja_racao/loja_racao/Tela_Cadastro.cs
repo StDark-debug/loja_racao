@@ -45,24 +45,9 @@ namespace loja_racao
         private void button2_Click(object sender, EventArgs e)
         {
             
-
+            Conexao_API();
+          
             Cadastro cad = new Cadastro(textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text);
-            StreamWriter sw = new StreamWriter(Application.StartupPath + "\\Export\\" + "endereco.txt");
-            sw.WriteLine(textBox2.Text);
-            sw.Close();
-
-
-            System.Diagnostics.Process.Start("C:/Users/endot/source/repos/loja_racao/loja_racao/bin/Debug/Export/script_api_matrix.py");
-
-            
-
-            string distance = System.IO.File.ReadAllText(Application.StartupPath + "\\Export\\" + "distancia.txt");
-            double d_distance = double.Parse(distance, CultureInfo.InvariantCulture);
-            double final_distance = (d_distance * 2);
-
-            Console.WriteLine(d_distance);
-            Console.WriteLine(final_distance);
-
             this.Close();
             nt = new Thread(novoForm);
             nt.SetApartmentState(ApartmentState.STA);
@@ -71,7 +56,7 @@ namespace loja_racao
 
         private void novoForm()
         {
-            Application.Run(new Form4());
+            Application.Run(new Tela_Outra_Entrega());
 
         }
 
@@ -111,6 +96,56 @@ namespace loja_racao
             textBox1.ForeColor = Color.Black;
         }
 
-       
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+            Conexao_API();
+            double final_distance = Conexao_API();
+            bool adc_frete;
+
+            //Colocar os cálculos do frete aqui!
+
+            string distancia = final_distance.ToString("0.#");
+            Thread.Sleep(400);
+            label14.Text = (distancia + " km");
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Tela_Cadastro_Load(object sender, EventArgs e)
+        {
+
+        }
+        public double Conexao_API()
+        {
+            string End_API = (textBox2.Text + " " + textBox6.Text + " " + Combox_Bairro.Text + " " + Combox_Cidade.Text + " " + Combox_UF.Text);
+            
+            StreamWriter sw = new StreamWriter(Application.StartupPath + "\\Export\\" + "endereco.txt");
+            sw.WriteLine(End_API);
+            sw.Close();
+
+
+            System.Diagnostics.Process.Start("C:/Users/endot/source/repos/loja_racao/loja_racao/bin/Debug/Export/script_api_matrix.pyw");
+
+
+
+            string distance = System.IO.File.ReadAllText(Application.StartupPath + "\\Export\\" + "distancia.txt");
+           
+            double d_distance = double.Parse(distance, CultureInfo.InvariantCulture);
+            double final_distance = (d_distance * 2);
+
+            
+            return final_distance;
+            
+
+        }
     }
 }
