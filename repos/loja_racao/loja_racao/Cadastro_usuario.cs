@@ -4,12 +4,13 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MySql.Data.MySqlClient;
 
 namespace loja_racao
 {
     class Cadastro_usuario
     {
-        SqlCommand cmd = new SqlCommand();
+        MySqlCommand cmd = new MySqlCommand();
         Conexao conex = new Conexao();
         public String message;
 

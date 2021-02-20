@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -9,15 +10,15 @@ namespace loja_racao
 {
     public class Conexao
     {
-        SqlConnection con = new SqlConnection();
+        MySqlConnection con = new MySqlConnection();
 
         //Construtor
         public Conexao()
         {
-            con.ConnectionString = @"Data Source=DESKTOP-UQK8BBK\SQLEXPRESS;Initial Catalog=sistema_entregas;Integrated Security=True";
+            con.ConnectionString = "server=localhost; database=sistema_entregas; uid=root; pwd=9608";
         }
         //Método para conectar
-        public SqlConnection conectar()
+        public MySqlConnection conectar()
         {
             if (con.State == System.Data.ConnectionState.Closed)
             {

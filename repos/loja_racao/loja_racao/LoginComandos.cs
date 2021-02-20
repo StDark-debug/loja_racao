@@ -4,6 +4,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MySql.Data.MySqlClient;
 
 namespace loja_racao
 {
@@ -11,9 +12,9 @@ namespace loja_racao
     {
         public bool exist = false;
         public String message;
-        SqlCommand cmd = new SqlCommand();
+        MySqlCommand cmd = new MySqlCommand();
         Conexao con = new Conexao();
-        SqlDataReader dr;
+        MySqlDataReader dr;
 
         public bool verificarLogin (String login, String senha)
         {
@@ -32,7 +33,7 @@ namespace loja_racao
                    
                 }
             }
-            catch (SqlException a)
+            catch (MySqlException a)
             {
                 this.message = "Erro ao acessar banco de dados";
                 
