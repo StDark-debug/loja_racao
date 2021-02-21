@@ -15,7 +15,7 @@ namespace loja_racao
         //Construtor
         public Conexao()
         {
-            con.ConnectionString = "server=localhost; database=sistema_entregas; uid=root; pwd=9608";
+            con.ConnectionString = "server=localhost;port=3307; database=sistema_entregas; uid=root; pwd=usbw";
         }
         //Método para conectar
         public MySqlConnection conectar()

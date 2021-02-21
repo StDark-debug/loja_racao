@@ -33,7 +33,7 @@ namespace loja_racao
                 //mensagem de erro ou sucesso
                 this.message = "Cadastrado com Sucesso!";
             }
-            catch (SqlException b)
+            catch (MySqlException b)
             {
                 this.message = "Erro ao tentar se conectar com o banco de Dados.";
             }

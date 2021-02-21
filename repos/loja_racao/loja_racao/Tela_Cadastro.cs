@@ -137,7 +137,7 @@ namespace loja_racao
             sw.Close();
 
 
-            System.Diagnostics.Process.Start("C:/Users/endot/source/repos/loja_racao/loja_racao/bin/Debug/Export/script_api_matrix.pyw");
+            System.Diagnostics.Process.Start(Application.StartupPath + "\\Export\\" + "script_api_matrix.pyw");
 
             Thread.Sleep(800);
 
